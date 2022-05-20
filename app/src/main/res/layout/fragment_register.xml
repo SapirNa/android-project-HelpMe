@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/help_me_bg_fragment"
+    app:layoutDescription="@xml/fragment_register_scene"
+    tools:context=".fragments.FragmentRegister">
+
+    <TextView
+        android:id="@+id/TextsignUP"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:textSize="30dp"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"/>
+
+    <EditText
+        android:id="@+id/setEmailReg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:hint="your email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/setPassReg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:hint="your password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonCstReg"
+        style="@style/button_style"
+        android:text="Let's go!!" />
+
+    <Button
+        android:id="@+id/buttonBackToLogIn"
+        style="@style/button_style"
+        android:text="back" />
+
+</LinearLayout>

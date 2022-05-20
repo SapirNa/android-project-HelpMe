@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/help_me_bg"
+
+    app:layoutDescription="@xml/fragment_login_scene"
+    tools:context=".fragments.FragmentLogin" >
+
+
+    <EditText
+        android:id="@+id/TextNameOfApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_view_style"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="HELP ME"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TextLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_view_style"
+        android:text="Hello guest\nlog in\n" />
+
+    <EditText
+        android:id="@+id/setEmailLogIn"
+        style="@style/text_write_style"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/setPassLogIn"
+        style="@style/text_write_style"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_gravity="center"
+        style="@style/button_style"
+        android:text="sign in" />
+
+    <TextView
+        android:id="@+id/TextRegister"
+        android:layout_marginTop="130dp"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have a acoount" />
+
+    <Button
+        android:id="@+id/buttonGTRegCustomer"
+        android:layout_marginTop="20dp"
+        style="@style/button_style"
+        android:onClick="funcRegister"
+        android:text="register for customer" />
+
+    <Button
+        android:id="@+id/buttonGTRegWorker"
+        android:layout_marginTop="20dp"
+        style="@style/button_style"
+        android:text="register for worker" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/help_me_bg_fragment"
+    tools:context=".fragments.FragmentRegWorker">
+
+
+    <TextView
+        android:id="@+id/TextsignUP"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Sign Up"/>
+
+    <EditText
+        android:id="@+id/setWorkerName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/setWorkerLastName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:ems="10"
+        android:hint="LastName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/setWorkerId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:hint="Id"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/setWorkerPass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:hint="password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/setWorkerEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <EditText
+        android:id="@+id/setWorkerFacebook"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:ems="10"
+        android:hint="Facebook"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/setWorkerPhone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        style="@style/text_write_style"
+        android:ems="10"
+        android:hint="phone"
+        android:inputType="phone"  />
+
+    <Spinner
+        android:id="@+id/setWorkerjob"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_spinner_job"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonUploadImage"
+                style="@style/button_style"
+                android:layout_marginLeft="15dp"
+                android:text="upload image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/workerImage"
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonWrkReg"
+        style="@style/button_style"
+        android:layout_margin="5dp"
+        android:text="Let's go" />
+
+
+</LinearLayout>
